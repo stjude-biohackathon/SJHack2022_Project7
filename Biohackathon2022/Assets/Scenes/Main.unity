@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -139,7 +139,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -157,6 +157,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4372084, y: 1.8897979, z: 0.27249643}
   m_Center: {x: -0.021082662, y: 0.90587735, z: -0.031175727}
+--- !u!138 &181487577
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181487573}
+  m_ConnectedBody: {fileID: 1755911222}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &245444283
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,7 +756,6 @@ GameObject:
   - component: {fileID: 1556022528}
   - component: {fileID: 1556022527}
   - component: {fileID: 1556022526}
-  - component: {fileID: 1556022530}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -825,22 +839,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1556022530
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556022525}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 2
 --- !u!1 &1593987206
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,6 +916,7 @@ GameObject:
   - component: {fileID: 1755911219}
   - component: {fileID: 1755911218}
   - component: {fileID: 1755911221}
+  - component: {fileID: 1755911222}
   m_Layer: 0
   m_Name: Couch
   m_TagString: Untagged
@@ -1014,6 +1013,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 7377803517530219457, guid: 1eecf896fb07b4d48a60072eaae59e2f, type: 3}
+--- !u!54 &1755911222
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755911216}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1792050924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +1042,7 @@ GameObject:
   - component: {fileID: 1792050927}
   - component: {fileID: 1792050926}
   - component: {fileID: 1792050929}
+  - component: {fileID: 1792050930}
   m_Layer: 0
   m_Name: UpperCouchElbow
   m_TagString: Untagged
@@ -1123,6 +1139,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 7377803517530219457, guid: 1eecf896fb07b4d48a60072eaae59e2f, type: 3}
+--- !u!54 &1792050930
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792050924}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1844902572
 GameObject:
   m_ObjectHideFlags: 0
