@@ -163,7 +163,4 @@ public class Controller : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other){
-        Debug.Log("Hits detected");
-    }
 }
