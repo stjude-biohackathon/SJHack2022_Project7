@@ -47,7 +47,19 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\ExploderComponent.cs" />
+     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\LightComponent.cs" />
+     <Compile Include="Assets\collider.cs" />
+     <Compile Include="Assets\True Explosions\System\Scripts\effects\PseudoVolumetricExplosion.cs" />
      <Compile Include="Assets\Scripts\Controller.cs" />
+     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\VolumetricComponent.cs" />
+     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\ParticleComponent.cs" />
+     <Compile Include="Assets\True Explosions\System\Scripts\exploders\Exploder.cs" />
+     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\VolumetricComponent2D.cs" />
+     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\PseudoVolumetricComponent.cs" />
+     <Compile Include="Assets\True Explosions\System\Scripts\exploders\SphereExploder.cs" />
+     <None Include="Assets\Kevin Iglesias\3DCharacterDummy\Readme.txt" />
+     <None Include="Assets\True Explosions\System\Shaders\SphereVolumetricExplosion.shader" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

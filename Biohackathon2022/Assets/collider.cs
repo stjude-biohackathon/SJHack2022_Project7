@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class collider : MonoBehaviour
 {
+
     private void OnTriggerEnter(Collider other){
         Debug.Log("Hits detected");
     }
