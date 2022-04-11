@@ -16,6 +16,7 @@ public class collider : MonoBehaviour
             Debug.Log("Hits detected");
 
             GameObject e = Instantiate(explosion, other.transform.position, Quaternion.identity) as GameObject;
+
         }
 
     }
