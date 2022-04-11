@@ -79,7 +79,7 @@ public class Controller : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() 
     {
         
     }
@@ -133,7 +133,7 @@ public class Controller : MonoBehaviour
                     var a = instruction.initialPosition;
                     var b = instruction.finalPosition;
                     target.transform.localPosition = Vector3.Lerp(a,b,u);
-                    Debug.Log($"{instruction}: {a} {b} {u} ({t})");
+                    //Debug.Log($"{instruction}: {a} {b} {u} ({t})");
                     }
                 break;
 
@@ -142,7 +142,7 @@ public class Controller : MonoBehaviour
                     var a = instruction.initialRotation;
                     var b = instruction.finalRotation;
                     target.transform.localRotation = Quaternion.Lerp(a,b,u);
-                    Debug.Log($"{instruction}: {a} {b} {u} ({t})");
+                    //Debug.Log($"{instruction}: {a} {b} {u} ({t})");
                     }
                 break;
             }
@@ -157,5 +157,9 @@ public class Controller : MonoBehaviour
             Debug.LogWarning("Removing previously active instruction group.");
             instructionGroups.RemoveAt(0);
         }
+    }
+
+    private void OnTriggerEnter(Collider other){
+        Debug.Log("Hits detected");
     }
 }
