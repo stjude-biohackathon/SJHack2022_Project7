@@ -8,7 +8,8 @@ public class collider : MonoBehaviour
 
     private void OnTriggerEnter(Collider other){
         Debug.Log("Hits detected");
-        GameObject e = Instantiate(explosion) as GameObject;
+
+        GameObject e = Instantiate(explosion, other.transform.position, Quaternion.identity) as GameObject;
 
     }
 }
