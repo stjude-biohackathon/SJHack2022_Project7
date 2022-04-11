@@ -7,8 +7,9 @@ public class Controller : MonoBehaviour
     public GameObject BaseAssembly = null;
     public GameObject MidAssembly = null;
     public GameObject CouchAssembly = null;
+    public GameObject Patient = null;
 
-    public enum Target { BaseAssembly, MidAssembly, CouchAssembly };
+    public enum Target { BaseAssembly, MidAssembly, CouchAssembly, Patient };
     public enum Action { NoOp, Translate, Rotate };
 
     public class Instruction
@@ -96,6 +97,9 @@ public class Controller : MonoBehaviour
 
             case Target.CouchAssembly:
                 return CouchAssembly;
+
+            case Target.Patient:
+                return Patient;
         }
 
         return null;
